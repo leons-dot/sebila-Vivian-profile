@@ -12,7 +12,7 @@ body {
 
 header {
     text-align: center;
-    padding: 40px 20px;
+    padding: 30px 15px;
     background-color: #6b3e26;
     color: white;
     margin-bottom: 20px;
@@ -20,6 +20,7 @@ header {
 
 header h1 {
     margin: 0;
+    font-size: 28px;
 }
 
 header p {
@@ -42,7 +43,7 @@ nav ul {
 
 nav a {
     display: block;
-    padding: 15px 20px;
+    padding: 12px 15px;
     color: white;
     text-decoration: none;
 }
@@ -56,12 +57,12 @@ nav a:focus {
 main {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 section {
     margin-bottom: 30px;
-    padding: 30px;
+    padding: 20px;
     background-color: white;
     border-radius: 8px;
 }
@@ -153,59 +154,48 @@ footer {
     color: white;
 }
 
-@media (max-width: 600px) {
+ 
+/* Tablet screens and larger */
+@media (min-width: 600px) {
     header {
-        padding: 30px 15px;
+        padding: 40px 20px;
     }
 
     header h1 {
-        font-size: 28px;
+        font-size: 36px;
     }
 
     nav a {
-        padding: 12px 15px;
+        padding: 15px 20px;
     }
 
     main {
-        padding: 0 10px;
+        padding: 0 20px;
     }
 
-    section {
-        padding: 20px;
+    section,
+    article {
+        padding: 30px;
     }
 
     #home {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        text-align: left;
     }
-}
-article {
-    margin-bottom: 30px;
-    padding: 30px;
-    background-color: white;
-    border-radius: 8px;
-}
 
-article h2 {
-    margin-top: 0;
-    color: #6b3e26;
-}
-
-/* Skills layout using CSS Grid */
-#skills ul {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 12px;
-    padding-left: 20px;
-}
-
-/* Two columns on tablets */
-@media (min-width: 600px) {
     #skills ul {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
-#home {
-    flex-direction: row;
-    text-align: left;
+
+/* Desktop screens */
+@media (min-width: 900px) {
+    main {
+        max-width: 1100px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
 }
+
