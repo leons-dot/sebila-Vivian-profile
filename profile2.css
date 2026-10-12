@@ -159,8 +159,6 @@ footer {
 
  
 /* Tablet screens and larger */
-
-/* Tablet screens and larger */
 @media (min-width: 600px) {
     header {
         padding: 40px 20px;
@@ -190,5 +188,16 @@ footer {
 
     #skills ul {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Desktop screens */
+@media (min-width: 900px) {
+    main {
+        max-width: 1100px;
+    }
+
+    nav ul {
+        gap: 10px;
     }
 }
