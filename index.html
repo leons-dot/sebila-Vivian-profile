@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sebila Vivian's software engineering profile and mini-portfolio.">
+
     <title>My Profile - Sebila Vivian</title>
+
     <link rel="stylesheet" href="profile2.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 
 <body>
 
-    <header>
-        <h1>SEBILA VIVIAN</h1>
-        <p>Software Developer</p>
-    </header>
+<header class="bg-[#6b3e26] text-white text-center px-5 py-10">
+    <h1 class="text-3xl md:text-4xl font-bold">
+        SEBILA VIVIAN
+    </h1>
+    <p class="mt-2 text-lg">
+        Software Developer
+    </p>
+</header>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+
+   
+<nav class="bg-[#222222] mb-8">
+    <ul class="flex flex-wrap justify-center gap-1 p-0 m-0 list-none">
+        <li>
+            <a class="block px-4 py-3 text-white hover:bg-[#6b3e26] focus:bg-[#6b3e26]"
+               href="#home">Home</a>
+        </li>
+        <li>
+            <a class="block px-4 py-3 text-white hover:bg-[#6b3e26] focus:bg-[#6b3e26]"
+               href="#about">About</a>
+        </li>
+        <li>
+            <a class="block px-4 py-3 text-white hover:bg-[#6b3e26] focus:bg-[#6b3e26]"
+               href="#skills">Skills</a>
+        </li>
+        <li>
+            <a class="block px-4 py-3 text-white hover:bg-[#6b3e26] focus:bg-[#6b3e26]"
+               href="#contact">Contact</a>
+        </li>
+    </ul>
+</nav>
+
 
     <main>
 
@@ -73,7 +98,7 @@
         <section id="contact">
             <h2>Contact Me</h2>
 
-            <form>
+            <form class="flex flex-col gap-3 max-w-xl">
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required minlength="2">
 
@@ -81,11 +106,14 @@
                 <input type="email" id="email" name="email" required>
                 <input type="tel" id="phone" name="phone" pattern="[0-9+\-\s]{7,15}" required>
 
-
+                
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required minlength="10"></textarea>
 
-                <button type="submit">Send Message</button>
+                <button type="submit"
+    class="mt-4 rounded bg-[#6b3e26] px-5 py-3 text-white hover:bg-[#4a291a] focus:outline-2 focus:outline-offset-2">
+    Send Message
+                </button>
             </form>
         </section>
 

@@ -71,11 +71,15 @@ h2 {
     color: #6b3e26;
 }
 
+
 #home {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
+    text-align: center;
 }
+
 
 #home img {
     width: 200px;
@@ -185,4 +189,23 @@ article {
 article h2 {
     margin-top: 0;
     color: #6b3e26;
+}
+
+/* Skills layout using CSS Grid */
+#skills ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding-left: 20px;
+}
+
+/* Two columns on tablets */
+@media (min-width: 600px) {
+    #skills ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+#home {
+    flex-direction: row;
+    text-align: left;
 }
